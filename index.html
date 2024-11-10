@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Psicología</title>
+    <meta name="description" content="Landing page de muestra para un curso de desarrollo web on line.">
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = yes, width = device-width">
+    <!--estilos para los iconos -->
+    <link rel="stylesheet" href="css/iconos.css">
+    <!-- aqui se irán añadiendo los estilos creados en cada nuevo módulo -->
+    <link href="assets/styles/style.css" rel="stylesheet" type="text/css">
+    <!-- Estilos para texto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="nav-code.js"></script>
+    <script src="image-modal.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <main id="home">
+    </main>
+    <div id="botup"><a href="#home"><i class="icon-circle-up"></i></a></div>
+    <div id="vntmodal">
+        <div id="botcerrar" onclick="cerrarModal('vntmodal')"><i class="icon-bot-close"></i></div>
+    </div>
+
+    <!--BARRA DE NAVEGACIÓN-->
+    <aside id="contnav">
+        <section class="fila bg-black fg-white" id="menu">
+            <div class="celdas"><a href="#home"><i class="fas fa-home fa-2x"></i></a></div>
+            <div class="celdas" id="bottoggle" onClick="toggleBarnav('nav1','abierto')">
+                <i class="icon-bot-menu botmenu"></i>
+            </div>
+            <div class="celdas" id="nav1" onClick="toggleBarnav('nav1','abierto')">
+                <nav class="barnav">
+                    <a href="#causas-afasia" class="item"><strong>Causas</strong></a>
+                    <a href="#tipos-afasia" class="item"><strong>Tipos de Afasia</strong></a>
+                    <a href="#rehabilitacion-afasia" class="item"><strong>Rehabilitación</strong></a>
+                    <a href="#centros-tratamiento" class="item"><strong>Centros de Tratamiento</strong></a>
+                    <a href="#inclusion-social" class="item"><strong>Inclusión social</strong></a>
+                    <a href="#glosario" class="item"><strong>Glosario</strong></a>
+                    <a href="#footer" class="item"><strong>Contacto</strong></a>
+                </nav>
+            </div>
+        </section>
+    </aside>
+
+    <!--HERO-->
+    <article id="hero" class="columna fg-white">
+        <section id="tit" class="poppins-bold">
+            <br><br>
+            <h1>Comprendiendo la Afasia: Restaurando la Comunicación</h1>
+            <h4>Explora las causas, tratamientos y recursos de apoyo para la rehabilitación del lenguaje</h4>
+        </section>
+        <section id="resumen">
+            <br>
+            <h5><b>Aquí aprenderás:</b></h5>
+
+            <ul>
+
+                <li><span class="sm-hide">¿Qué es Afasia?</span></li>
+
+                <li><span class="sm-hide">¿Cuales son las principales causas?</li>
+
+                <li><span class="sm-hide">Tipos de Afasia y síntomas</li>
+
+                <li><span class="sm-hide">Opciones de tratamiento y rehabilitación</li>
+
+            </ul>
+
+        </section>
+        <section class="cta1">
+            <div>
+                <a href="#formul" class="boton">¡Explorar!</a>
+            </div>
+        </section>
+    </article>
+
+    <!--Contenido principal-->
+    <article id="testimonios" class="bg-light-section">
+        <section class="fila">
+            <div class="celdas">
+                <img src="assets/img/afagia.png" width="300" height="300" alt="" />
+            </div>
+            <div class="celdas">
+                <h3 class="titulo-testimonio">¿Qué es?</h3>
+                <p>Es un trastorno que se manifiesta de diferentes maneras, se puede afectar la comprensión auditiva,
+                    expresión, lectura y escritura. Generalmente se produce debido a una lesión cerebral, generalmente
+                    en el hemisferio izquierdo del cerebro. <br> <br><br>En Colombia no existen datos epidemiológicos de
+                    esta
+                    condición en el país, sin embargo, solo se evidencian reportes de 88.762 atenciones relacionadas con
+                    afasia, equivalentes a una prevalencia de atenciones poblacional de 184.1 x 100.000 habitantes. La
+                    Ciudad que mayor frecuencia presenta esta condición es Bogotá con 36.9%, le siguen los departamentos
+                    de Nariño 8.0% y Sucre 4.0%.</p>
+            </div>
+        </section>
+    </article>
+
+    <!--Causas de Afasia-->
+    <section id="causas-afasia" class="py-5 bg-light-section">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">¿Por qué puedo tener Afasia?</h2>
+            <div class="row">
+                <!-- Card 1: Accidente Cerebrovascular (ACV) -->
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-brain icono-card"></i> Accidente Cerebrovascular (ACV)
+                            </h5>
+                            <p class="card-text">El ACV es la principal causa de afasia, afectando a un tercio de las
+                                personas que lo sufren. Esta condición aumenta las tasas de mortalidad tanto aguda como
+                                crónica.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 2: Factores de Riesgo del ACV -->
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-heartbeat icono-card"></i> Factores de Riesgo del ACV
+                            </h5>
+                            <p class="card-text">La hipertensión es el factor de riesgo más común, seguido del
+                                tabaquismo, diabetes mellitus, colesterol alto, obesidad, trastornos cardíacos,
+                                alcoholismo y consumo de sustancias psicoactivas.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 3: Traumatismo Craneal (TCE) -->
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-car-crash icono-card"></i> Traumatismo Craneal (TCE)
+                            </h5>
+                            <p class="card-text">El TCE es una causa frecuente de afasia en personas menores de 40 años,
+                                con secuelas que pueden incluir alteración de la memoria y cambios comportamentales.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 4: Tumores Cerebrales -->
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-dna icono-card"></i> Tumores Cerebrales
+                            </h5>
+                            <p class="card-text">Los tumores, cuando afectan áreas del lenguaje, pueden causar síntomas
+                                de afasia. La severidad depende de la localización y el ritmo de crecimiento.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 5: Enfermedades Neurodegenerativas -->
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-virus icono-card"></i> Enfermedades Neurodegenerativas
+                            </h5>
+                            <p class="card-text">Algunas enfermedades neurodegenerativas como el Alzheimer y el
+                                Parkinson están asociadas con alteraciones lingüísticas progresivas.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tipos-afasia" class="py-5 bg-light-section">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Tipos de Afasia</h2>
+
+            <!-- Imagen en miniatura que se expande al hacer clic -->
+            <div class="text-center mb-4">
+                <img src="./assets/img/tipos_afagia.png" alt="Tipos de Afasia" class="img-thumbnail"
+                    style="width: 200px; cursor: pointer;" data-toggle="modal" data-target="#imageModal">
+            </div>
+
+            <!-- Modal de Bootstrap para mostrar la imagen en tamaño completo -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <img src="./assets/img/tipos_afagia.png" alt="Tipos de Afasia Completa"
+                                class="img-fluid w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <!-- Afasia de Broca -->
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="./assets/img/broca.jpg" alt="Afasia de Broca" class="img-thumbnail mr-3"
+                        style="width: 100px;">
+                    <div>
+                        <h5 class="mb-1"><i class="fas fa-comments icono-lista"></i> Afasia de Broca</h5>
+                        <p>La afasia de Broca se caracteriza por un habla dificultosa y laboriosa. Aunque las personas
+                            con este tipo de afasia entienden bien el lenguaje, suelen tener problemas para formar
+                            oraciones completas y pueden hablar con frases cortas, omitiendo palabras como "es" o "el".
+                            Esta afasia se debe a daños en el lóbulo frontal izquierdo, en la región de Broca, que
+                            controla la producción del habla y la expresión lingüística.</p>
+                    </div>
+                </div>
+
+                <!-- Afasia de Wernicke -->
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="./assets/img/Wernicke.jpg" alt="Afasia de Wernicke" class="img-thumbnail mr-3"
+                        style="width: 100px;">
+                    <div>
+                        <h5 class="mb-1"><i class="fas fa-brain icono-lista"></i> Afasia de Wernicke</h5>
+                        <p>La afasia de Wernicke afecta la comprensión del lenguaje. Las personas con este tipo de
+                            afasia pueden hablar con fluidez, pero sus palabras a menudo carecen de sentido, y pueden
+                            inventar palabras o usar expresiones incorrectas. Este tipo de afasia ocurre por daño en el
+                            lóbulo temporal izquierdo, en la región de Wernicke, que es fundamental para la comprensión
+                            del lenguaje y la coherencia verbal.</p>
+                    </div>
+                </div>
+
+                <!-- Afasia Global -->
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="./assets/img/global.jpg" alt="Afasia Global" class="img-thumbnail mr-3"
+                        style="width: 100px;">
+                    <div>
+                        <h5 class="mb-1"><i class="fas fa-globe icono-lista"></i> Afasia Global</h5>
+                        <p>La afasia global es la forma más severa de afasia, afectando tanto la producción como la
+                            comprensión del lenguaje. Las personas con afasia global tienen grandes dificultades para
+                            hablar o entender el habla y pueden no ser capaces de leer o escribir. Esta afasia suele
+                            ocurrir después de un daño extenso en el hemisferio izquierdo del cerebro, afectando
+                            múltiples áreas del lenguaje.</p>
+                    </div>
+                </div>
+
+                <!-- Afasia Anómica -->
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="./assets/img/anomica.jpg" alt="Afasia Anómica" class="img-thumbnail mr-3"
+                        style="width: 100px;">
+                    <div>
+                        <h5 class="mb-1"><i class="fas fa-question-circle icono-lista"></i> Afasia Anómica</h5>
+                        <p>La afasia anómica se caracteriza por la dificultad para encontrar palabras correctas,
+                            especialmente nombres de objetos o personas. Aunque pueden entender y producir oraciones,
+                            las personas con afasia anómica suelen hacer pausas frecuentes en su habla para buscar
+                            palabras, lo que dificulta la fluidez. Esta afasia resulta de daños menores en diversas
+                            partes del hemisferio izquierdo.</p>
+                    </div>
+                </div>
+
+                <!-- Afasia de Conducción -->
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="./assets/img/conduccion.jpg" alt="Afasia de Conducción" class="img-thumbnail mr-3"
+                        style="width: 100px;">
+                    <div>
+                        <h5 class="mb-1"><i class="fas fa-exchange-alt icono-lista"></i> Afasia de Conducción</h5>
+                        <p>La afasia de conducción afecta la capacidad para repetir palabras o frases. Aunque las
+                            personas pueden entender y expresarse, tienen problemas para reproducir con precisión las
+                            palabras que escuchan. Este tipo de afasia se asocia con daños en el fascículo arcuato, la
+                            vía que conecta las áreas de Broca y Wernicke, responsables de la producción y comprensión
+                            del habla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rehabilitacion-afasia" class="py-5 bg-light">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">¿Se Puede Rehabilitar la Afasia?</h2>
+            <p class="text-center mb-5">La rehabilitación de la afasia se basa en los mecanismos de neuroplasticidad
+                cerebral, es decir, la capacidad del sistema nervioso de reorganizarse y adaptarse tras una lesión
+                cerebral, creando nuevas conexiones nerviosas para restaurar el procesamiento del lenguaje.</p>
+
+            <!-- Tabs de Bootstrap -->
+            <ul class="nav nav-tabs" id="afasiaTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="terapia-convencional-tab" data-toggle="tab"
+                        href="#terapia-convencional" role="tab" aria-controls="terapia-convencional"
+                        aria-selected="true">Terapia Convencional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nuevas-tecnologias-tab" data-toggle="tab" href="#nuevas-tecnologias"
+                        role="tab" aria-controls="nuevas-tecnologias" aria-selected="false">Nuevas Tecnologías</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="comunicacion-aumentativa-tab" data-toggle="tab"
+                        href="#comunicacion-aumentativa" role="tab" aria-controls="comunicacion-aumentativa"
+                        aria-selected="false">Comunicación Aumentativa</a>
+                </li>
+            </ul>
+
+            <div class="tab-content text-center" id="afasiaTabContent">
+                <!-- Tab: Terapia Convencional para la Afasia -->
+                <div class="tab-pane fade show active" id="terapia-convencional" role="tabpanel"
+                    aria-labelledby="terapia-convencional-tab">
+                    <br><br>
+                    <img src="./assets/img/1.jpg" alt="Terapia Convencional" class="img-thumbnail centered-image">
+                    <br><br>
+                    <h5>Terapia Convencional para la Afasia</h5>
+                    <p>La terapia convencional incluye una serie de técnicas y ejercicios estructurados para mejorar la
+                        comunicación.</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Repetición:</strong> Repetir palabras, frases y estructuras gramaticales ayuda a
+                            consolidar habilidades lingüísticas.</li>
+                        <li><strong>Asociación de Imágenes:</strong> Usar imágenes para relacionarlas con palabras o
+                            frases ayuda en la recuperación de vocabulario.</li>
+                        <li><strong>Ejercicios de Lectura:</strong> Mejoran tanto la comprensión como la expresión,
+                            trabajando desde palabras sueltas hasta párrafos completos.</li>
+                    </ul>
+                </div>
+
+                <!-- Tab: Terapias con Nuevas Tecnologías -->
+                <div class="tab-pane fade" id="nuevas-tecnologias" role="tabpanel"
+                    aria-labelledby="nuevas-tecnologias-tab">
+                    <br><br>
+                    <img src="./assets/img/2.jpg" alt="Nuevas Tecnologías" class="img-thumbnail centered-image">
+                    <br><br>
+                    <h5>Terapias con Nuevas Tecnologías</h5>
+                    <p>Las nuevas tecnologías han introducido herramientas avanzadas para el tratamiento de la afasia.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><strong>Aplicaciones de Rehabilitación de Lenguaje:</strong> Aplicaciones como Lingraphica,
+                            Tactus Therapy y Constant Therapy permiten al paciente realizar ejercicios interactivos y
+                            adaptativos que fortalecen el lenguaje y la memoria.</li>
+                        <br>
+                        <li><strong>Realidad Virtual (VR):</strong> La VR crea entornos interactivos que simulan
+                            situaciones de la vida real.</li>
+                    </ul>
+                </div>
+
+                <!-- Tab: Terapias de Comunicación Aumentativa y Alternativa (CAA) -->
+                <div class="tab-pane fade" id="comunicacion-aumentativa" role="tabpanel"
+                    aria-labelledby="comunicacion-aumentativa-tab">
+                    <br><br>
+                    <img src="./assets/img/3.jpg" alt="Comunicación Aumentativa" class="img-thumbnail centered-image">
+                    <br><br>
+                    <h5>Terapias de Comunicación Aumentativa y Alternativa (CAA)</h5>
+                    <p>La Comunicación Aumentativa y Alternativa (CAA) es fundamental para pacientes con afasia que
+                        tienen dificultad para expresarse verbalmente.</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Tableros de Comunicación:</strong> Contienen imágenes, letras y palabras que ayudan
+                            al paciente a expresar ideas mediante señalización o selección.</li>
+                        <li><strong>Dispositivos de Generación de Voz:</strong> Permiten que el paciente seleccione
+                            palabras o frases que el dispositivo convierte en voz.</li>
+                        <li><strong>Gestos y Signos Visuales:</strong> Utilizar gestos o signos visuales ayuda a
+                            expresar conceptos y emociones cuando el habla no es posible.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="centros-tratamiento" class="py-5 bg-light-section">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Centros de Tratamiento en Colombia</h2>
+            <div class="row">
+                <!-- Instituto Nacional de Rehabilitación - Bogotá -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Instituto Nacional de Rehabilitación</h5>
+                            <p class="card-text">Ubicación: Bogotá</p>
+                            <p class="card-text">Terapias integrales para afasia.</p>
+                            <a href="https://www.google.com/maps?q=Instituto+Nacional+de+Rehabilitación,+Bogotá" target="_blank" class="btn btn-primary mt-2">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Hospital Universitario San Ignacio - Bogotá -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hospital Universitario San Ignacio</h5>
+                            <p class="card-text">Ubicación: Bogotá</p>
+                            <p class="card-text">Centro de neurología con especialistas en lenguaje.</p>
+                            <a href="https://www.google.com/maps?q=Hospital+Universitario+San+Ignacio,+Bogotá" target="_blank" class="btn btn-primary mt-2">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Centro de Rehabilitación Neurológica (CIREN) - Medellín -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Centro de Rehabilitación Neurológica (CIREN)</h5>
+                            <p class="card-text">Ubicación: Medellín</p>
+                            <p class="card-text">Rehabilitación neurológica especializada.</p>
+                            <a href="https://www.google.com/maps?q=Centro+de+Rehabilitación+Neurológica+CIREN,+Medellín" target="_blank" class="btn btn-primary mt-2">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Fundación Santa Fe de Bogotá -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fundación Santa Fe de Bogotá</h5>
+                            <p class="card-text">Ubicación: Bogotá</p>
+                            <p class="card-text">Fonoaudiología y neurología para pacientes con afasia.</p>
+                            <a href="https://www.google.com/maps?q=Fundación+Santa+Fe+de+Bogotá" target="_blank" class="btn btn-primary mt-2">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Instituto Colombiano de Neurociencias (ICN) - Barranquilla -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Instituto Colombiano de Neurociencias (ICN)</h5>
+                            <p class="card-text">Ubicación: Barranquilla</p>
+                            <p class="card-text">Programas de rehabilitación neurológica.</p>
+                            <a href="https://www.google.com/maps?q=Instituto+Colombiano+de+Neurociencias+ICN,+Barranquilla" target="_blank" class="btn btn-primary mt-2">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Hospital Universitario del Valle - Cali -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hospital Universitario del Valle</h5>
+                            <p class="card-text">Ubicación: Cali</p>
+                            <p class="card-text">Unidad de rehabilitación con terapia de lenguaje.</p>
+                            <a href="https://www.google.com/maps?q=Hospital+Universitario+del+Valle,+Cali" target="_blank" class="btn btn-primary mt-2">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de Inclusión Social -->
+<section id="inclusion-social" class="py-5 bg-inclusion">
+    <div class="container">
+        <h2 class="text-center mb-4">La Importancia de la Inclusión Social</h2>
+        <p class="text-center lead mb-4">Las personas con afasia necesitan ser incluidas en la sociedad, pues esto mejora significativamente su bienestar y calidad de vida. La inclusión social permite que estas personas no se sientan ajenas a su entorno y les brinda la oportunidad de ser protagonistas de su propia vida.</p>
+        <p class="text-center font-italic">"La afasia no es una enfermedad en sí misma, pero las secuelas pueden ser persistentes. La intervención adecuada y un programa de inclusión social son esenciales para optimizar los resultados funcionales y mejorar la calidad de vida de las personas afectadas."</p>
+    </div>
+</section>
+
+<!-- Sección de Glosario -->
+<section id="glosario" class="py-5 bg-glosario">
+    <div class="container">
+        <h2 class="text-center mb-4">Glosario de Términos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><strong>Agitación Psicomo:</strong> Movimientos involuntarios que pueden ser dañinos para el individuo.</li><br>
+                    <li><strong>Daño Cerebral:</strong> Lesión súbita en el cerebro con secuelas físicas, psíquicas y sensoriales.</li><br>
+                    <li><strong>Deterioro Cognitivo:</strong> Alteraciones en pensamiento, memoria y toma de decisiones.</li><br>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><strong>Epidemiología:</strong> Estudio de la distribución y factores de enfermedades en poblaciones.</li><br>
+                    <li><strong>Estructuras Corticales y Subcorticales:</strong> Partes del cerebro responsables de funciones sensoriales, aprendizaje y memoria.</li><br>
+                    <li><strong>Neuroplasticidad Cerebral:</strong> Capacidad del cerebro para adaptarse y reorganizarse tras una lesión.</li><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Footer -->
+<footer id="footer" class="py-5 bg-footer text-white">
+    <div class="container">
+        <div class="row">
+            <!-- Enlaces Rápidos -->
+            <div class="col-md-4">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#tratamientos" class="text-white">Tratamientos</a></li>
+                    <li><a href="#centros-tratamiento" class="text-white">Centros de Tratamiento</a></li>
+                    <li><a href="#inclusion-social" class="text-white">Inclusión Social</a></li>
+                    <li><a href="#glosario" class="text-white">Glosario</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-md-4">
+                <h5>Redes Sociales</h5>
+                <div class="d-flex justify-content-start">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+
+            <!-- Contacto -->
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p>Email: <a href="mailto:contacto@afasia.org" class="text-white">contacto@afasia.org</a></p>
+                <p>Formulario de contacto: <a href="#contacto" class="text-white">Aquí</a></p>
+                <p class="font-italic mt-3">"Acompañando a las personas con afasia en su camino de recuperación."</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+</body>
+
+</html>
